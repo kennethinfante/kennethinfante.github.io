@@ -1,0 +1,11 @@
+Kenneth Infante:
+  name        : "Kenneth Infante"
+  bio         : "Let's talk about analytics! Reach out via the links below."
+  avatar      : "https://drive.google.com/uc?export=view&id=1zWgppZKHCWgMuXrkvBLm2o0A5Sj29gaL"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:infantekennethjhim@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://kennethinfante.github.io"
