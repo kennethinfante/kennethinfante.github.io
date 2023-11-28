@@ -27,31 +27,31 @@ With that in mind, can I somehow bring this to Pandas?
 ## Charting in Excel and Pandas
 Consider the following data on the number of immigrants from China and India to Canada from 1980 to 2013 (Note: This data is taken from Kaggle.com. The original [dataset](https://www.kaggle.com/datasets/ammaraahmad/immigration-to-canada/data) contains records from 195 countries.)
 
-![Immigrations from China and India to Canada 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/df_CI_wide_xl.png)
+![Immigrations from China and India to Canada 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/df_CI_wide_xl.png)
 
 Plotting this data on a line chart in Excel results to
 
-![Excel Line Chart showing Immigrations from China and India to Canada 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/df_CI_wide_line.png)
+![Excel Line Chart showing Immigrations from China and India to Canada 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/df_CI_wide_line.png)
 
 Alright. Nice and easy.
 
 How about the same data but China and India columns unpivoted to create a single Country column?
 
-![Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/df_CI_long_xl.png)
+![Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/df_CI_long_xl.png)
 
-![Excel Line Chart showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/df_CI_long_line_mising.png)
+![Excel Line Chart showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/df_CI_long_line_mising.png)
 
 Ok. That’s a mess.
 
 How about in Pandas? Let's plot the first dataframe
 
-![Pandas Line Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/CI_wide_pd.png)
+![Pandas Line Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/CI_wide_pd.png)
 
 Ok. That works.
 
 Let's also plot the second dataframe.
 
-![Pandas Line Chart showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/CI_long_pd.png)
+![Pandas Line Chart showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/CI_long_pd.png)
 
 Both the Excel and Pandas showed the same plot for both dataframes.
 
@@ -78,23 +78,23 @@ Now, let’s try to create different plots for our wide-form data to test my hyp
 
 **Bar Chart**
 
-![Pandas Bar Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/wide_bar_plot.png)
+![Pandas Bar Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/wide_bar_plot.png)
 
 **Area Chart**
 
-![Pandas Area Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/wide_area_plot.png)
+![Pandas Area Chart showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/wide_area_plot.png)
 
 **Box Plot** 
 
-![Pandas Box Plot showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/wide_box_plot.png)
+![Pandas Box Plot showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/wide_box_plot.png)
 
 **Histogram**
 
-![Pandas Histogram showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/wide_hist_plot.png)
+![Pandas Histogram showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/wide_hist_plot.png)
 
 **Scatter Plot**
 
-![Pandas Scatter Plot showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/scatter_error.png)
+![Pandas Scatter Plot showing Immigrations from China and India to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/scatter_error.png)
 
 Unfortunately, the scatter plot resulted in an error.
 
@@ -110,7 +110,7 @@ Let's do again the scatter plot using long-form data and differentiate the dots 
 
 **Scatter Plot**
 
-![Pandas Scatter Plot showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/scatter_plot.png)
+![Pandas Scatter Plot showing Immigrations to Canada from 1980 to 2013]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/scatter_plot.png)
 
 Hooray! That works.
 
@@ -130,7 +130,7 @@ In summary, data in wide-form works well when you’re comparing or plotting mul
 
 The workflow here is that you need to get the data first in the right form and change it until you get the desired plot.
 
-![Feedback loop between the data, plot, and you. ]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-viz-from-excel/loop2.png)
+![Feedback loop between the data, plot, and you. ]({{ site.url }}{{ site.baseurl }}/assets/images/pandas-data-visualization-compare-excel/loop2.png)
 
 Only then you could design or add elements to the plot to make it more appealing.
 
