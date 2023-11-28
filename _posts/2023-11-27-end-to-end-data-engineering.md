@@ -15,8 +15,6 @@ header:
 description: This article shows how to set up a data pipeline using modern data engineering stack.
 ---
 
->
-
 ## Background
 
 As I’m looking for ways to learn more about data analytics and engineering, I stumbled upon the [**End-to-End Data Engineering Project**](https://www.linkedin.com/learning/end-to-end-data-engineering-project) course at Linkedin Learning. The course is very practical and shows how to build a data pipeline using modern tools and techniques. The author is using macOS and I’m using Windows. As I followed along the course, I stumbled upon issues with setting up the same pipeline on Windows. Because of this, I decided to write this article to show the steps of setting up the data pipeline on Windows.
@@ -31,7 +29,7 @@ The data pipeline is basically made up of the following:
 
 First, you have to download **Docker Desktop for Windows**. The complete instructions are on this [page](https://docs.docker.com/desktop/wsl/). Make sure that the Docker-WSL integration is enabled. The WSL will enable us to use Linux on Windows. I’ve used the default distribution included in the WSL which is Ubuntu 22.04 on my machine.
 
-![Docker WSL integration]({{ site.url }}{{ site.baseurl }}/assets/images/docker-wsl-integration.png)
+![Docker WSL integration]({{ site.url }}{{ site.baseurl }}/assets/images/end-to-end-data-eng/docker-wsl-integration.png)
 
 Next, we set up our Python environment to use DBT and Dagster for our project. Again, we use the Ubuntu terminal as DBT is throwing some errors when running in Windows.
 
