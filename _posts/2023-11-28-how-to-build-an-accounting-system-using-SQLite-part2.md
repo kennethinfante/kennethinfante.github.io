@@ -2,7 +2,7 @@
 layout: posts
 title:  "How to Design an Accounting System using SQLite - Part 2"
 date:   2023-11-28
-tags: [python, pandas]
+tags: [SQL, SQLite]
 highlight_home: true
 author_profile: true
 author: Kenneth Infante

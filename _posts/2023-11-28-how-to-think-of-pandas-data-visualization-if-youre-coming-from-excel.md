@@ -2,7 +2,7 @@
 layout: posts
 title:  "How to Think of Pandas Data Visualization If You’re Coming From Excel"
 date:   2023-11-28
-tags: [python, pandas]
+tags: [Python, Pandas]
 highlight_home: false
 author_profile: true
 author: Kenneth Infante
