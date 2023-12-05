@@ -1,7 +1,7 @@
 ---
 layout: posts
 title:  "Audit Sampling Using Python"
-date:   2023-12-06
+date:   2023-12-05
 tags: [Python, Excel]
 highlight_home: false
 author_profile: true
