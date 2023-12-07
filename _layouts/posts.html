@@ -2,12 +2,12 @@
 layout: archive
 ---
 
-{% capture category %}{{ page.categories | first }}{% endcapture %}
+{% capture page_category %}{{ page.categories | first }}{% endcapture %}
 {% capture page_title %}{{ page.title }}{% endcapture %}
 {{ content }}
 
 <!-- <ul class="taxonomy__index">
-  {% assign postsInYear = site.categories[category] | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% assign postsInYear = site.categories[page_category] | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 
   {{ postsInYear | inspect}}
   {% for year in postsInYear %}
@@ -24,7 +24,7 @@ layout: archive
 <br/>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.categories[category] | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% assign postsByYear = site.categories[page_category] | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 
 <h5>Other Related Articles</h5>
 
