@@ -6,5 +6,7 @@ main:
     url: "/mywork"
   - title: "My Writing"
     url: "/mywriting"
+  - title: "My Notes"
+    url: "/mynotes"
   - title: "About Me"
     url: "/about"

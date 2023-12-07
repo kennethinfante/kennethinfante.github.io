@@ -8,8 +8,8 @@ layout: archive
 <ul class="taxonomy__index">
   {% assign sorted_tags = site.tags | sort %}
   {% for tag in sorted_tags %}
-  {% assign cat_tags = tag[1] | where: "categories", "work" | sort %}
-  {% if cat_tags != empty %}
+  {% assign cat_tag = tag[1] | where: "categories", "work" | sort %}
+  {% if cat_tag != empty %}
   <li>
     <a href="#{{ tag[0] | slugify }}">
       <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
@@ -21,12 +21,12 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'grid' %}
 {% for tag in sorted_tags %}
-{% assign cat_tags = tag[1] | where: "categories", "work" | sort %}
-{% if cat_tags != empty %}
+{% assign cat_tag = tag[1] | where: "categories", "work" | sort %}
+{% if cat_tag != empty %}
 <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-  <h2 class="archive__subtitle">{{ tag[0] }}</h2>
+  <h3 class="archive__subtitle">{{ tag[0] }}</h3>
   <div class="entries-{{ entries_layout }}">
-    {% for post in tag.last %}
+    {% for post in cat_tag %}
     {% include archive-single.html type=entries_layout %}
     {% endfor %}
   </div>
