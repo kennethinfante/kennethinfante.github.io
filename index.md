@@ -7,7 +7,7 @@ author_profile: true
 author: Kenneth Infante
 ---
 
-![kenneth avatar](https://drive.google.com/uc?export=view&id=1zRseblsbkl73jwznlM9Obs2C97Zf112M){: .avatar} 
+![kenneth avatar]({{ site.url }}{{ site.baseurl }}/assets/images/2x2photo_a.jpg){: .avatar} 
 
 # Hi there! I'm Kenneth Infante
 
