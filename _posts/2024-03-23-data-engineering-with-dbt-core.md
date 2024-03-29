@@ -1,13 +1,13 @@
 ---
 layout: posts
-title:  "Data Engineering with DBT"
+title:  "Data Engineering with dbt Core"
 date:   2024-03-23
 tags: [Data Engineering]
 highlight_home: true
 author_profile: true
 author: Kenneth Infante
 categories: article
-tagline: "Using DBT Core Applying the Medallion Architecture to Parking Violations Data"
+tagline: "Using dbt Core Applying the Medallion Architecture to Parking Violations Data"
 header:
   overlay_image: https://images.unsplash.com/photo-1528802704307-fb7d0f29ad0d?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
   teaser: https://images.unsplash.com/photo-1528802704307-fb7d0f29ad0d?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
